@@ -5,7 +5,7 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 
 @WebService // marca a classse com webservice
-@SOAPBinding (style = Style.RPC) // proto
+@SOAPBinding // protocolo
 public interface HelloWorld {
     @WebMethod
     String sayHelloWorld(String content);
